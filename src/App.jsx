@@ -1,22 +1,14 @@
-import { useState } from 'react'
-import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import './App.css'
+import s from './App.module.css'
+import { Menu } from './components/menu'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <>
-    <nav>
-      <a href="">primeiro</a>
-      <a href="">segundo</a>
-      <a href="">terceiro</a>
-      <a href="">quarto</a>
-    </nav>
-    </>
+    <div className={s.wrapHome}>
+      <Menu/>
+    </div>
   )
 }
 
 export default App
+
